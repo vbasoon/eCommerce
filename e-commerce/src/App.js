@@ -41,24 +41,25 @@ const App = () => {
       <main className="main">
         <div className="content">
           <ul className="products-list">
-            {productCards}
-            <li>
-              <div className="product-card">
-                <img
-                  className="product-card__image"
-                  src="./images/1.jpeg"
-                  alt="product1"
-                />
-                <div className="product-card__name">
-                  <a href="product.html">Slim Shirt</a>
+            {data.products.map((product) => (
+              <li>
+                <div className="product-card">
+                  <img
+                    className="product-card__image"
+                    src="./images/1.jpeg"
+                    alt="product1"
+                  />
+                  <div className="product-card__name">
+                    <a href="product.html">Slim Shirt</a>
+                  </div>
+                  <div className="product-card__brand">Nike</div>
+                  <div className="product-card__price">$60</div>
+                  <div className="product-card__rating">
+                    4.5 Stars (10 Reviews)
+                  </div>
                 </div>
-                <div className="product-card__brand">Nike</div>
-                <div className="product-card__price">$60</div>
-                <div className="product-card__rating">
-                  4.5 Stars (10 Reviews)
-                </div>
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       </main>
