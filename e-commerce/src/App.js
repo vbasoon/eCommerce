@@ -43,7 +43,7 @@ const App = () => {
         <div className="content">
           <ul className="products-list">
             {data.products.map((product) => (
-              <li>
+              <li key={product.id}>
                 <div className="product-card">
                   <img
                     className="product-card__image"
@@ -56,7 +56,7 @@ const App = () => {
                   <div className="product-card__brand">{product.brand}</div>
                   <div className="product-card__price">{product.price}</div>
                   <div className="product-card__rating">
-                    {product.rating} Stars ({product.reviews})
+                    {product.rating} Stars ({product.reviews} Reviews)
                   </div>
                 </div>
               </li>
