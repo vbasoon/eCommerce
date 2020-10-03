@@ -116,3 +116,32 @@ a:hover {
 .product-card__rating {
   margin-bottom: 1rem;
 }
+
+/* Sidebar */
+.logo button {
+  font-size: 3rem;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo button:hover {
+  font-size: 3rem;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  transform: translateX(-30rem);
+  width: 30rem;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
