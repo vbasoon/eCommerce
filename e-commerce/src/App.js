@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import data from "./data";
 
 const openSidebar = () => {
   document.querySelector(".sidebar").classList.add("open");
