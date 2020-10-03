@@ -46,16 +46,16 @@ const App = () => {
                 <div className="product-card">
                   <img
                     className="product-card__image"
-                    src="./images/1.jpeg"
-                    alt="product1"
+                    src={product.image}
+                    alt={product.name}
                   />
                   <div className="product-card__name">
-                    <a href="product.html">Slim Shirt</a>
+                    <a href="product.html">{product.name}</a>
                   </div>
-                  <div className="product-card__brand">Nike</div>
-                  <div className="product-card__price">$60</div>
+                  <div className="product-card__brand">{product.brand}</div>
+                  <div className="product-card__price">{product.price}</div>
                   <div className="product-card__rating">
-                    4.5 Stars (10 Reviews)
+                    {product.rating} Stars ({product.reviews})
                   </div>
                 </div>
               </li>
