@@ -55,8 +55,6 @@ a:hover {
 
 .content {
   grid-area: main;
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .footer {
@@ -73,8 +71,9 @@ a:hover {
 
 .products-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .products-list li {
