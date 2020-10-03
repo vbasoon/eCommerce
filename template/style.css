@@ -118,16 +118,15 @@ a:hover {
 }
 
 /* Sidebar */
-.logo button {
+aside button {
   font-size: 3rem;
   padding: 0.5rem;
   background: transparent;
   border: none;
-  color: #fff;
   cursor: pointer;
 }
 
-.logo button:hover {
+aside button:hover {
   font-size: 3rem;
   padding: 0.5rem;
   background: transparent;
@@ -140,8 +139,34 @@ a:hover {
   position: fixed;
   transform: translateX(-30rem);
   width: 30rem;
+  background-color: #f0f0f0;
+  height: 100%;
 }
 
 .sidebar.open {
   transform: translateX(0);
+}
+
+.sidebar__close-button {
+  border-radius: 50%;
+  border: 0.1rem solid #000;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar__close-button:hover {
+  border-radius: 50%;
+  border: 0.1rem solid #000;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  padding: 0;
+  color: #808080;
+  cursor: pointer;
+  transition: 0.5s all ease;
 }

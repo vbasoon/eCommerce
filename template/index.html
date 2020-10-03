@@ -10,7 +10,7 @@
     <div class="container">
       <header class="header">
         <div class="logo">
-          <button onclick="openSidebar">
+          <button onclick="openSidebar()">
             &#9776;
           </button>
           <a href="index.html">Logo</a>
@@ -23,6 +23,9 @@
       </header>
       <aside class="sidebar">
         <h3>Categories</h3>
+        <button class="sidebar__close-button" onclick="closeSidebar()">
+          &times;
+        </button>
         <ul>
           <li>
             <a href="index.html">Pants</a>
