@@ -15,7 +15,7 @@ const App = () => {
     <div className="container">
       <header className="header">
         <div className="logo">
-          <button onclick={openSidebar}>&#9776;</button>
+          <button onClick={openSidebar}>&#9776;</button>
           <a href="index.html">Logo</a>
         </div>
         <nav></nav>
@@ -26,7 +26,7 @@ const App = () => {
       </header>
       <aside className="sidebar">
         <h3>Categories</h3>
-        <button className="sidebar__close-button" onclick={closeSidebar}>
+        <button className="sidebar__close-button" onClick={closeSidebar}>
           &times;
         </button>
         <ul>
