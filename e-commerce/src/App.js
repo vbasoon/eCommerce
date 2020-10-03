@@ -1,13 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
+const openSidebar = () => {
+  document.querySelector(".sidebar").classList.add("open");
+  console.log("work");
+};
+
+const closeSidebar = () => {
+  document.querySelector(".sidebar").classList.remove("open");
+};
+
+const App = () => {
   return (
     <div className="container">
       <header className="header">
         <div className="logo">
-          <button onclick="openSidebar()">&#9776;</button>
+          <button onclick={openSidebar}>&#9776;</button>
           <a href="index.html">Logo</a>
         </div>
         <nav></nav>
@@ -18,7 +26,7 @@ function App() {
       </header>
       <aside className="sidebar">
         <h3>Categories</h3>
-        <button className="sidebar__close-button" onclick="closeSidebar()">
+        <button className="sidebar__close-button" onclick={closeSidebar}>
           &times;
         </button>
         <ul>
@@ -141,6 +149,6 @@ function App() {
       <footer className="footer">All rights reserved.&nbsp; 2020&copy;</footer>
     </div>
   );
-}
+};
 
 export default App;
