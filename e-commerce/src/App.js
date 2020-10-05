@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import data from "./data";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 const openSidebar = () => {
@@ -20,12 +20,12 @@ const App = () => {
         <header className="header">
           <div className="logo">
             <button onClick={openSidebar}>&#9776;</button>
-            <a href="/">Logo</a>
+            <Link to="/">Logo</Link>
           </div>
           <nav></nav>
           <div className="header-links">
-            <a href="cart.html">Cart</a>
-            <a href="signin.html">Sign In</a>
+            <Link to="cart.html">Cart</Link>
+            <Link to="signin.html">Sign In</Link>
           </div>
         </header>
         <aside className="sidebar">
@@ -35,10 +35,10 @@ const App = () => {
           </button>
           <ul>
             <li>
-              <a href="/">Pants</a>
+              <Link to="/products:id">Pants</Link>
             </li>
             <li>
-              <a href="/">Shirts</a>
+              <Link to="//products:id">Shirts</Link>
             </li>
           </ul>
         </aside>

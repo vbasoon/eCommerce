@@ -1,7 +1,7 @@
 export default {
   products: [
     {
-      id: 1,
+      _id: "1",
       name: "Slim Shirt",
       category: "Shirts",
       image: "/images/1.jpeg",
@@ -11,17 +11,17 @@ export default {
       reviews: 10,
     },
     {
-      id: 2,
+      _id: "2",
       name: "Fit Shirt",
       category: "Shirts",
-      image: "/images/2.webp",
+      image: "/images/2.jpg",
       price: 50,
       brand: "Levis",
       rating: 4.2,
       reviews: 5,
     },
     {
-      id: 3,
+      _id: "3",
       name: "Blouse",
       category: "Blouse",
       image: "/images/3.jpg",
@@ -31,7 +31,7 @@ export default {
       reviews: 10,
     },
     {
-      id: 4,
+      _id: "4",
       name: "Best Pants",
       category: "Pants",
       image: "/images/4.jpg",
@@ -41,17 +41,17 @@ export default {
       reviews: 10,
     },
     {
-      id: 5,
+      _id: "5",
       name: "Light Short",
       category: "Sorts",
-      image: "/images/5.jpeg",
+      image: "/images/5.jpg",
       price: 60,
       brand: "Levis",
       rating: 4.5,
       reviews: 10,
     },
     {
-      id: 6,
+      _id: "6",
       name: "Rock Jeans",
       category: "Jeans",
       image: "/images/6.jpg",
